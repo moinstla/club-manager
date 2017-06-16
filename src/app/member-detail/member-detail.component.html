@@ -1,3 +1,7 @@
-<p>
-  member-detail works!
-</p>
+
+  <h3>Name: {{(memberToDisplay | async)?.name}}</h3>
+
+
+<!-- <div *ngFor="let project of projects | async">
+  <div *ngIf="project.$key == (projectToDisplay | async)?.$key">
+    <app-fund [selectedProject]='project'></app-fund> -->

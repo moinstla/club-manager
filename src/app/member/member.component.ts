@@ -14,6 +14,11 @@ export class MemberComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
 
+
+  goToDetailPage(clickedMember) {
+    this.router.navigate(['members', clickedMember.$key]);
+  };
+
   constructor(private router: Router, private memberService: MemberService) { }
 
   ngOnInit() {

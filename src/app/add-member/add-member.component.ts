@@ -3,14 +3,22 @@ import { Member } from '../member.model';
 import { MemberService } from '../member.service';
 
 @Component({
-  selector: 'app-admin',
-  templateUrl: './admin.component.html',
-  styleUrls: ['./admin.component.css'],
-    providers: [MemberService]
+  selector: 'app-add-member',
+  templateUrl: './add-member.component.html',
+  styleUrls: ['./add-member.component.css'],
+  providers: [MemberService]
 })
-export class AdminComponent implements OnInit {
-  constructor(private memberService: MemberService) { }
+export class AddMemberComponent implements OnInit {
+  addForm: boolean = false;
+    showAddForm() {
+    if(this.addForm === true) {
+      this.addForm = false;
+    } else {
+      this.addForm = true;
+    }
+  }
 
+  constructor(private memberService: MemberService) { }
 
   ngOnInit() {
   }
