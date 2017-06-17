@@ -13,6 +13,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class MemberComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
+  filterByType: string = "All Members";
 
 
   goToDetailPage(clickedMember) {
@@ -24,5 +25,9 @@ export class MemberComponent implements OnInit {
   ngOnInit() {
     this.members = this.memberService.getMembers();
   }
+
+  onChange(optionFromMenu) {
+    this.filterByType = optionFromMenu;
+    }
 
 }

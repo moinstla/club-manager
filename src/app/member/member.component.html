@@ -1,4 +1,12 @@
-<div *ngFor="let member of members | async" class="panel panel-default">
+<h3>Filter by Role:</h3>
+<select (change)="onChange($event.target.value)">
+  <option value="All Members">All Members</option>
+  <option value="President">President</option>
+  <option value="Secretary">Secretary</option>
+  <option value="Treasurer">Treasurer</option>
+</select>
+
+<div *ngFor="let member of members | async | role:filterByRole" class="panel panel-default">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(member)">{{member.name}}</h3>
     <div *ngIf="currentRoute === '/admin'">
