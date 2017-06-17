@@ -2,45 +2,35 @@
 <br>
 <div *ngIf="addForm">
   <div class="panel-body">
-      <div>
-        <label>Name:</label>
-        <br>
-        <input #newName>
-      </div>
-      <div>
-        <label>Image:</label>
-        <br>
-        <input #newImage>
-      </div>
-      <div>
-        <label>Role</label>
-      <select #newRole>
-         <option value="Member">Member</option>
-         <option value="President">President</option>
-         <option value="Treasurer">Treasurer</option>
-         <option value="Secretary">Secretary</option>
-      </select>
-      </div>
-      <div>
-        <label>Bio:</label>
-        <br>
-        <input #newBio>
-      </div>
-      <div>
-        <label>Member Since:</label>
-        <br>
-        <input #newMemberSince>
-      </div>
-
-      <button (click)='showAddForm()' (click)="submitForm(newName.value,
-      newImage.value,
-      newRole.value,
-      newBio.value,
-      newMemberSince.value);
-      newName.value='';
-      newImage.value='';
-      newRole.value='';
-      newBio.value='';
-      newMemberSince.value='';">Add</button>
+    <div>
+      <label>Name:</label>
+      <br>
+      <input #newName>
     </div>
+    <div>
+      <label>Image:</label>
+      <br>
+      <input #newImage>
+    </div>
+    <div>
+      <label>Role</label>
+    <select #newRole>
+       <option value="Member">Member</option>
+       <option value="President">President</option>
+       <option value="Treasurer">Treasurer</option>
+       <option value="Secretary">Secretary</option>
+    </select>
+    </div>
+    <div>
+      <label>Bio:</label>
+      <br>
+      <input #newBio>
+    </div>
+    <div>
+      <label>Member Since:</label>
+      <br>
+      <input #newMemberSince>
+    </div>
+    <button (click)='showAddForm()' (click)="submitForm(newName.value, newImage.value, newRole.value, newBio.value, newMemberSince.value); newName.value=''; newImage.value=''; newRole.value=''; newBio.value=''; newMemberSince.value='';">Add</button>
   </div>
+</div>

@@ -24,18 +24,18 @@ export class MemberService {
    getMemberById(memberId: string) {
      return this.database.object('members/' + memberId);
    }
-  //  updateMember(localUpdatedMember) {
-  //   var memberEntryInFirebase = this.getMemberById(localUpdatedMember.$key);
-  //   memberEntryInFirebase.update({name: localUpdatedMember.name,
-  //                               image: localUpdatedMember.image,
-  //                               role: localUpdatedMember.role,
-  //                               bio: localUpdatedMember.bio,
-  //                               memberSince: localUpdatedMember.memberSince
-  //   });
-  // }
-  //
-  // deleteMember(localMemberToDelete){
-  //   var memberEntryInFirebase = this.getMemberById(localMemberToDelete.$key);
-  //   memberEntryInFirebase.remove();
-  // }
+
+   updateMember(localUpdatedMember) {
+    var memberEntryInFirebase = this.getMemberById(localUpdatedMember.$key);
+    memberEntryInFirebase.update({name: localUpdatedMember.name,
+                                image: localUpdatedMember.image,
+                                role: localUpdatedMember.role,
+                                bio: localUpdatedMember.bio,
+                                memberSince: localUpdatedMember.memberSince});
+  }
+
+  deleteMember(localMemberToDelete){
+    var memberEntryInFirebase = this.getMemberById(localMemberToDelete.$key);
+    memberEntryInFirebase.remove();
+  }
 }

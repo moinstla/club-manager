@@ -5,12 +5,13 @@
   <option value="Secretary">Secretary</option>
   <option value="Treasurer">Treasurer</option>
 </select>
-
+<app-add-member></app-add-member>
 <div *ngFor="let member of members | async | role:filterByRole" class="panel panel-default">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(member)">{{member.name}}</h3>
     <div *ngIf="currentRoute === '/admin'">
       {{member.name}}
+      <app-edit-member [selectedMember]="member"></app-edit-member>
       <hr>
     </div>
   </div>

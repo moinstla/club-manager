@@ -1,0 +1,37 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+  <button *ngIf="!addForm" (click)='showAddForm()'class="btn">Edit</button>
+    <div *ngIf="addForm">
+      <h4>Edit:</h4>
+      <label>Name:</label>
+      <br>
+      <input [(ngModel)]="selectedMember.name">
+      <br>
+      <label>Image:</label>
+      <br>
+      <input [(ngModel)]="selectedMember.image">
+      <br>
+      <label>Role:</label>
+      <br>
+      <select [(ngModel)]="selectedMember.role">
+       <option value="Member">Member</option>
+        <option value="President">Technology</option>
+        <option value="Secretary">Secretary</option>
+        <option value="Treasurer">Treasurer</option>
+      </select>
+      <br>
+      <label>Bio:</label>
+      <br>
+      <textarea [(ngModel)]="selectedMember.bio"></textarea>
+      <br>
+      <label>Member Since:</label>
+      <br>
+      <input [(ngModel)]="selectedMember.memberSince">
+      <br>
+      <button (click)='showAddForm()' (click)="beginUpdatingMember(selectedMember); selectedMember.name.value=''; selectedMember.image.value=''; selectedMember.role.value=''; selectedMember.bio.value=''; selectedMember.memberSince.value='';
+      ">Update</button>
+      <button (click)="beginUpdatingMember(selectedMember)">Update</button>
+      <button (click)="beginDeletingMember(selectedMember)">Delete</button>
+    </div>
+  </div>
+</div>
