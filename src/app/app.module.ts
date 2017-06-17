@@ -12,7 +12,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
 import { AddMemberComponent } from './add-member/add-member.component';
-import { RolePipe } from './role.pipe';
+import { ExpertisePipe } from './expertise.pipe';
 import { EditMemberComponent } from './edit-member/edit-member.component';
 
 export const firebaseConfig = {
@@ -31,7 +31,7 @@ export const firebaseConfig = {
     AboutComponent,
     MemberDetailComponent,
     AddMemberComponent,
-    RolePipe,
+    ExpertisePipe,
     EditMemberComponent
   ],
   imports: [

@@ -28,9 +28,9 @@ export class MemberService {
     var memberEntryInFirebase = this.getMemberById(localUpdatedMember.$key);
     memberEntryInFirebase.update({name: localUpdatedMember.name,
                                 image: localUpdatedMember.image,
-                                role: localUpdatedMember.role,
+                                expertise: localUpdatedMember.expertise,
                                 bio: localUpdatedMember.bio,
-                                memberSince: localUpdatedMember.memberSince});
+                                contact: localUpdatedMember.contact});
   }
 
   deleteMember(localMemberToDelete){

@@ -6,31 +6,38 @@
       <label>Name:</label>
       <br>
       <input #newName>
+      <br>
     </div>
     <div>
       <label>Image:</label>
       <br>
       <input #newImage>
+      <br>
     </div>
     <div>
-      <label>Role</label>
-    <select #newRole>
-       <option value="Member">Member</option>
-       <option value="President">President</option>
-       <option value="Treasurer">Treasurer</option>
-       <option value="Secretary">Secretary</option>
+      <label>Area of expertise:</label>
+      <br>
+    <select #newExpertise>
+      <option value="All Members">All Members</option>
+      <option value="Director">Director</option>
+      <option value="Writer">Writer</option>
+      <option value="Actor">Actor</option>
+      <option value="Crew">Crew</option>
+       <br>
     </select>
     </div>
     <div>
       <label>Bio:</label>
       <br>
       <input #newBio>
+      <br>
     </div>
     <div>
-      <label>Member Since:</label>
+      <label>Contact:</label>
       <br>
-      <input #newMemberSince>
+      <input #newcontact>
     </div>
-    <button (click)='showAddForm()' (click)="submitForm(newName.value, newImage.value, newRole.value, newBio.value, newMemberSince.value); newName.value=''; newImage.value=''; newRole.value=''; newBio.value=''; newMemberSince.value='';">Add</button>
+    <br>
+    <button class="btn"(click)='showAddForm()' (click)="submitForm(newName.value, newImage.value, newExpertise.value, newBio.value, newcontact.value); newName.value=''; newImage.value=''; newExpertise.value=''; newBio.value=''; newcontact.value='';">Add</button>
   </div>
 </div>

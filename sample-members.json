@@ -1,19 +1,19 @@
 { "members": [{
 
   "name": "Pink Floyd",
-  "role": "band", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQib4Z_xS4iDFiEK0ksKOEoXVIthRSZWJtRw_IDLGS9Q7G1Cpqn",
+  "expertise": "band", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQib4Z_xS4iDFiEK0ksKOEoXVIthRSZWJtRw_IDLGS9Q7G1Cpqn",
   "bio": "A live  member by the English progressive rock band originally released in 1995, on the label EMI in the United Kingdom.",
   "member since": 1,
   "id": "1"
   }, {
   "name": "Pink Floyd",
-  "role": "band", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQib4Z_xS4iDFiEK0ksKOEoXVIthRSZWJtRw_IDLGS9Q7G1Cpqn",
+  "expertise": "band", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQib4Z_xS4iDFiEK0ksKOEoXVIthRSZWJtRw_IDLGS9Q7G1Cpqn",
   "bio": "A live  member by the English progressive rock band originally released in 1995, on the label EMI in the United Kingdom.",
   "member since": 1,
   "id": "2"
   }, {
   "name": "Pink Floyd",
-  "role": "band", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQib4Z_xS4iDFiEK0ksKOEoXVIthRSZWJtRw_IDLGS9Q7G1Cpqn",
+  "expertise": "band", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQib4Z_xS4iDFiEK0ksKOEoXVIthRSZWJtRw_IDLGS9Q7G1Cpqn",
   "bio": "A live  member by the English progressive rock band originally released in 1995, on the label EMI in the United Kingdom.",
   "member since": 1,
   "id": "3"

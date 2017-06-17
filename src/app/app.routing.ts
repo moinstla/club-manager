@@ -8,11 +8,11 @@ import { MemberDetailComponent } from './member-detail/member-detail.component';
 const appRoutes: Routes = [
   {
     path: '',
-    component: MemberComponent
+    component: AboutComponent
   },
   {
-    path: 'about',
-    component: AboutComponent
+    path: 'member',
+    component: MemberComponent
   },
   {
     path: 'admin',

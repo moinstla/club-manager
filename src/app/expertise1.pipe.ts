@@ -3,31 +3,31 @@ import { Member } from './member.model';
 
 
 @Pipe({
-  name: 'role',
+  name: 'expertise',
   pure: false
 })
-export class RolePipe implements PipeTransform {
+export class ExpertisePipe implements PipeTransform {
 
-  transform(input: Member[], desiredRole) {
+  transform(input: Member[], desiredExpertise) {
     var output: Member[] = [];
-    if(desiredRole === "President") {
+    if(desiredExpertise === "President") {
       for (var i = 0; i < input.length; i++) {
-        if (input[i].role === "President") {
+        if (input[i].expertise === "President") {
           output.push(input[i]);
         }
       }
       return output;
-    } else if (desiredRole === "Secretary") {
+    } else if (desiredExpertise === "Secretary") {
       for (var i = 0; i < input.length; i++) {
-        if (input[i].role === "Secretary") {
+        if (input[i].expertise === "Secretary") {
           output.push(input[i]);
         }
       }
       return output;
 
-    } else if (desiredRole === "Treasurer") {
+    } else if (desiredExpertise === "Treasurer") {
       for (var i = 0; i < input.length; i++) {
-        if (input[i].role === "Treasurer") {
+        if (input[i].expertise === "Treasurer") {
           output.push(input[i]);
         }
       }

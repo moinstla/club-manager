@@ -1,12 +1,13 @@
-<h3>Filter by Role:</h3>
+<h3>Filter by expertise:</h3>
 <select (change)="onChange($event.target.value)">
   <option value="All Members">All Members</option>
-  <option value="President">President</option>
-  <option value="Secretary">Secretary</option>
-  <option value="Treasurer">Treasurer</option>
+  <option value="Director">Director</option>
+  <option value="Writer">Writer</option>
+  <option value="Actor">Actor</option>
+  <option value="Crew">Crew</option>
 </select>
 <app-add-member></app-add-member>
-<div *ngFor="let member of members | async | role:filterByRole" class="panel panel-default">
+<div *ngFor="let member of members | async | expertise:filterByExpertise" class="panel panel-default">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(member)">{{member.name}}</h3>
     <div *ngIf="currentRoute === '/admin'">

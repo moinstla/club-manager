@@ -1,1 +1,5 @@
-<h3>Name: {{(memberToDisplay | async)?.name}}</h3>
+<h3> {{(memberToDisplay | async)?.name}}</h3>
+<img src="{{(memberToDisplay | async)?.image}}">
+<h5> {{(memberToDisplay | async)?.expertise}}</h5>
+<h5> {{(memberToDisplay | async)?.bio}}</h5>
+<h5> {{(memberToDisplay | async)?.contact}}</h5>

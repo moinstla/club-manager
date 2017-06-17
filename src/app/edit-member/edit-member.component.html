@@ -11,27 +11,27 @@
       <br>
       <input [(ngModel)]="selectedMember.image">
       <br>
-      <label>Role:</label>
+      <label>Area of Expertise:</label>
       <br>
-      <select [(ngModel)]="selectedMember.role">
-       <option value="Member">Member</option>
-        <option value="President">President</option>
-        <option value="Secretary">Secretary</option>
-        <option value="Treasurer">Treasurer</option>
+      <select [(ngModel)]="selectedMember.expertise">
+        <option value="All Members">All Members</option>
+        <option value="Director">Director</option>
+        <option value="Writer">Writer</option>
+        <option value="Actor">Actor</option>
+        <option value="Crew">Crew</option>
       </select>
       <br>
       <label>Bio:</label>
       <br>
       <textarea [(ngModel)]="selectedMember.bio"></textarea>
       <br>
-      <label>Member Since:</label>
+      <label>Contact:</label>
       <br>
-      <input [(ngModel)]="selectedMember.memberSince">
+      <input [(ngModel)]="selectedMember.contact">
       <br>
-      <button (click)='showAddForm()' (click)="beginUpdatingMember(selectedMember); selectedMember.name.value=''; selectedMember.image.value=''; selectedMember.role.value=''; selectedMember.bio.value=''; selectedMember.memberSince.value='';
+      <button class="btn" (click)='showAddForm()' (click)="beginUpdatingMember(selectedMember); selectedMember.name.value=''; selectedMember.image.value=''; selectedMember.expertise.value=''; selectedMember.bio.value=''; selectedMember.contact.value='';
       ">Update</button>
-      <button (click)="beginUpdatingMember(selectedMember)">Update</button>
-      <button (click)="beginDeletingMember(selectedMember)">Delete</button>
+      <button class="btn" (click)="beginDeletingMember(selectedMember)">Delete</button>
     </div>
   </div>
 </div>
