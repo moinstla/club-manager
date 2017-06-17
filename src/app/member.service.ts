@@ -1,6 +1,5 @@
 import { Member } from './member.model';
 import { Injectable } from '@angular/core';
-import { MEMBERS } from './mock-members';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 
