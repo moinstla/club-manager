@@ -6,8 +6,6 @@ import { MemberComponent } from './member/member.component';
 import { UpdateMemberComponent } from './update-member/update-member.component';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
 
-
-
 const appRoutes: Routes = [
   {
     path: '',
@@ -22,7 +20,7 @@ const appRoutes: Routes = [
     component: AdminComponent
   },
   {
-    path: 'member/:id',
+    path: 'members/:id',
     component: MemberDetailComponent
   },
 

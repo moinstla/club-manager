@@ -9,7 +9,8 @@ import { FirebaseListObservable } from 'angularfire2/database';
 @Component({
   selector: 'app-member-detail',
   templateUrl: './member-detail.component.html',
-  styleUrls: ['./member-detail.component.css']
+  styleUrls: ['./member-detail.component.css'],
+  providers: [MemberService]
 })
 
 export class MemberDetailComponent implements OnInit {

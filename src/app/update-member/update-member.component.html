@@ -1,3 +1,36 @@
-<p>
-  update-members works!
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <button *ngIf="!addForm" (click)='showAddForm()'class="btn">Edit this Project</button>
+    <br>
+    <div *ngIf="addForm">
+      <div class="panel-body">
+            <label>Name:</label>
+            <br>
+            <input [(ngModel)]="selectedMember.name">
+          </div>
+          <div>
+            <label>Image:</label>
+            <br>
+            <input [(ngModel)]="selectedImage.manager">
+          </div>
+          <div>
+            <label>Role:</label>
+            <br>
+            <input [(ngModel)]="selectedMember.role">
+          </div>
+          <div>
+            <label>Bio:</label>
+            <br>
+            <input [(ngModel)]="selectedMember.bio">
+          </div>
+          <div>
+            <label>Member Since:</label>
+            <br>
+            <input [(ngModel)]="selectedMember.memberSince">
+          </div>
+          <button (click)='showAddForm()' (click)="beginUpdatingMember(selectedMember);selectedMember.name.value='';selectedMember.image.value='';selectedMember.role.value='';selectedMember.bio.value='';selectedMember.memberSince.value='';
+          ">Update</button>
+          <button (click)="beginDeletingMember(selectedMember)">Delete</button>
+        </div>
+      </div>
+    </div>
