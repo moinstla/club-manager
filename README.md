@@ -6,7 +6,7 @@
 
 ## Description
 
-A website for a club that allows users to view a list of members and their individual profiles, and allows an administrator to add, update and delete members. Club data is stored using firebase.
+A website for a filmmakers club that allows users to view a list of members and their individual profiles, and allows an administrator to add, update and delete members. Member data is stored using firebase.
 
 ## Development server
 
