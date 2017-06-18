@@ -1,5 +1,12 @@
 
  img {
-  height: auto;
+  height: 150px;
+  border-radius: 5px
+}
 
+.well {
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-bottom: 75px;
+  font-weight: lighter;
 }

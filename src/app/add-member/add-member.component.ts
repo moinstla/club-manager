@@ -24,11 +24,11 @@ export class AddMemberComponent implements OnInit {
   }
 
   submitForm(name: string,
-      expertise: string,
       image: string,
+      expertise: string,
       bio: string,
       contact: string) {
-      const NEWMEMBER: Member = new Member(name, expertise, image, bio, contact);
+      const NEWMEMBER: Member = new Member(name, image, expertise,  bio, contact);
       this.memberService.addMember(NEWMEMBER);
 
     }

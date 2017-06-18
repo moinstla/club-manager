@@ -1,4 +1,9 @@
-<h3>Filter by expertise:</h3>
+
+<h2>Members:</h2>
+  <div *ngIf="currentRoute === '/admin'">
+    <app-add-member></app-add-member>
+  </div>
+<h4>Filter by expertise:</h4>
 <select (change)="onChange($event.target.value)">
   <option value="All Members">All Members</option>
   <option value="Director">Director</option>
@@ -6,12 +11,11 @@
   <option value="Actor">Actor</option>
   <option value="Crew">Crew</option>
 </select>
-<app-add-member></app-add-member>
+<br><br>
 <div *ngFor="let member of members | async | expertise:filterByExpertise" class="panel panel-default">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(member)">{{member.name}}</h3>
     <div *ngIf="currentRoute === '/admin'">
-      {{member.name}}
       <app-edit-member [selectedMember]="member"></app-edit-member>
       <hr>
     </div>

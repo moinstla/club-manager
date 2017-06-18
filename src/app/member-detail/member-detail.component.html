@@ -1,5 +1,13 @@
-<h3> {{(memberToDisplay | async)?.name}}</h3>
-<img src="{{(memberToDisplay | async)?.image}}">
-<h5> {{(memberToDisplay | async)?.expertise}}</h5>
-<h5> {{(memberToDisplay | async)?.bio}}</h5>
-<h5> {{(memberToDisplay | async)?.contact}}</h5>
+<div class="well">
+  <h3> {{(memberToDisplay | async)?.name}}</h3>
+  <br>
+  <img src="{{(memberToDisplay | async)?.image}}">
+  <br>
+  <br>
+  <h4> <em>Area of Expertise:</em> {{(memberToDisplay | async)?.expertise}}</h4>
+  <br>
+  <h4><em>Bio:</em> {{(memberToDisplay | async)?.bio}}</h4>
+  <br>
+  <h4><em>Contact:</em> {{(memberToDisplay | async)?.contact}}</h4>
+  <br>
+</div>

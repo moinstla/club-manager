@@ -1,0 +1,14 @@
+.film-image {
+  border-radius: 5px;
+  border: 10px solid black;
+  margin-bottom: 40px;
+  color: lightGray;
+  height: 350px;
+  background: url("../../images/film.jpg");
+  background-size: cover;
+
+}
+
+p {
+    font-size: 20px;
+}
